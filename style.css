@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Code', sans-serif;
+}
+
+:root{
+    --background: #282C33;
+    --branco: #ffff;
+    --cinza: #ABB2BF;
+    --roxo: #C778DD;
+    --roxo-hover: #dab1d9;
+}
+
+body{
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+
+.logo h1{
+    color: var(--roxo);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.9rem;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+span{
+    color: var(--roxo);
+}
+
+.nav-item a{
+    text-decoration: none;
+    margin-right: 35px;
+    color: var(--cinza);
+}
+
+.nav-item button{
+    background-color: transparent;
+    border: none;
+    color: var(--cinza);
+    font-size: 1rem;
+    margin-right: 30px;
+}
+
+.nav-item button:hover{
+    cursor: pointer;
+    color: var(--roxo-hover);
+}
+
+#btnTop {                                            /* botão para subir a tela para o topo */
+    display: none; /* Inicia oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+/* ------------------------------------------------------- */
+
+.redes{
+    position: absolute;
+    top: 150px;
+    margin-left: 1310px;
+    border-right: 2px solid var(--roxo);
+}
+
+.redes img{
+    display: block;
+    margin-top: 15px;
+    cursor: pointer; 
+}
+
+.content .redes .whatsapp{
+    height: auto;
+    width: 70%;
+    margin-left: 5px;
+}
+
+/* ------------------------------------------------------------------ */
+
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px ;
+    margin-top: -10px;
+}
+
+.apresentacao img{
+    background-color: transparent;
+    width: 35%;
+    height: auto;
+    rotate: -8deg;
+}
+
+.apresentacao .forma{
+    position: absolute;
+    top: 220px;
+    margin-left: 40px;
+    width: 18%;
+    height: auto;
+    rotate: 850deg;
+    z-index: -999;
+}
+
+.apre-sobre{
+    align-items: center;
+    margin-top: 130px;
+    margin-right: 140px;
+}
+
+.apre-sobre h1{
+    color: white;
+}
+
+.apre-sobre h1 span{
+    color: var(--roxo);
+}
+
+.apre-sobre h2{
+    color: var(--cinza);
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+.apre-sobre button, a{
+    color: var(--branco);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 9px;
+    border-color: var(--roxo);
+    margin-top: 25px;
+}
+
+.apre-sobre button:hover, a:hover{
+    cursor: pointer;
+    color: var(--roxo-hover);
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.frase{
+    display: flex;
+    justify-content: center;
+}
+
+.texto{
+    margin-top: -20px;
+}
+
+.texto h2{
+    color: var(--roxo);
+    border: 2px solid var(--cinza);
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.texto h2 span{
+    color: var(--branco);
+}
+
+.frase h3{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    border: 2px solid var(--cinza);
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--branco);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.projetos{
+    display: flex;
+    margin: 3% 5%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--roxo);
+}
+
+.titulo-conteudo h1{
+    color: var(--branco);
+    border: 1px;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.titulo-conteudo span{
+    color: var(--roxo);
+}
+
+.titulo .seta{
+    color: var(--roxo);
+    margin-left: 155vh;
+    rotate: 90deg;
+}
+
+/* ==================================================================================== */
+
+.projeto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.projeto .card{
+    width: 30%;    
+    padding-right: 30px;
+}
+
+.projeto .card-3{
+    padding-right: 0;
+}
+
+.projeto .card-baixo{
+    margin-top: 35px;
+}
+
+.projeto .card img{
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--roxo);
+}
+
+.projeto-conteudo{
+    color: var(--cinza);
+    text-transform: uppercase;
+    width: 100%;
+    border: 1px solid var(--cinza);
+    margin-top: -4.8px;
+    margin-right: 0px;
+}
+
+.projeto-conteudo h2, h3{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-left: 8px;
+    border-bottom: 1px solid var(--cinza);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.projeto-conteudo h2{
+    border-top: 1px solid var(--cinza);
+}
+
+.projeto-conteudo h1{
+    color: var(--branco);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 100;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.projeto-conteudo button{
+    padding: 8px;
+    color: var(--branco);
+    background-color: transparent;
+    border-color: var(--roxo);
+    border-radius: 5px;
+    margin: 10px 0px 8px 10px;
+}
+
+.projeto-conteudo button a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.projeto-conteudo button:hover{
+    cursor: pointer;
+    color: var(--roxo-hover);
+}
+
+/* ======================================================================= */
+
+.tecnologia{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6% 5%;
+}
+
+.conhecimento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card2{
+    text-align: center;
+    color: var(--cinza);
+    transition: 0.3s ease;
+}
+
+.card2:hover{
+    padding: 10px;
+}
+
+.card2 img{
+    width: 50%;
+}
+
+.card2-baixo{
+    margin-top: 20px;
+}
+
+/* ===================================================================================== */
+
+.container-habilidade{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6% 5%;
+    background-color: #161616;
+    padding: 45px 30px;
+    margin-top: -20px;
+}
+
+.container-hab{
+    background-color: var(--background);
+    color: var(--cinza);
+    transition: 0.3s ease;
+}
+
+.container-hab:not(:first-child){
+    margin-top: 8px;
+    transition: 0.3s ease;
+}
+
+.container1{
+    padding: 10px 10px;
+    transition: 0.3s ease;
+}
+
+.container1 p{
+    color: var(--cinza);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.container1 span{
+    color: var(--roxo);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.container-hab:hover{
+    .container1 p{
+        
+        color: black;
+        font-size: 1.2rem;
+    }
+    .container1 span{
+        color: rebeccapurple;
+    }
+}
+.container-hab:hover{
+    background-color: var(--roxo);
+    padding: 15px 15px;
+    margin: 13px -15px 5px 15px;
+}
+
+/* ===================================================================================== */
+
+.sobre-mim{
+    display: flex;
+    margin: 70px 70px;
+    margin-bottom: -200px;
+}
+
+.sobre-titulo span{
+    color: var(--roxo);
+}
+
+.sobre-titulo h1{
+    color: var(--branco);
+    border: 1px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--roxo);
+}
+
+.sobre-texto p{
+    color: var(--cinza);
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.sobre-mim img{
+    padding-bottom: 100px;
+    margin-top: -50px;
+    rotate: -8deg;
+}
+
+/* ========================================================================================== */
+
+.contato{
+    margin: 80px 70px;
+}
+
+.forma-contato{
+    display: flex;
+}
+
+.contato-titulo h1{
+    color: var(--branco);
+    border: 1px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--roxo);
+}
+
+.contato-titulo p{
+    color: var(--cinza);
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.mensagem{
+    margin-top: 50px;
+    border: 1px solid var(--cinza);
+    padding: 0px 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mensagem p{
+    text-align: center;
+    color: var(--cinza);
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.mensagem img{
+    width: 15%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.mensagem img:hover{
+    cursor: pointer;
+}
+
+.mensagem .whatsapp{
+    margin-right: 5px;
+}
+
+/* ============================================================================================ */
+
+footer{
+    border-top: 1px solid var(--cinza);
+}
+
+.footer-conteudo{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 85px 0 85px;
+}
+
+.rodape h1{
+    color: var(--roxo);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5rem;
+}
+
+.rodape p{
+    margin-top: 7px;
+    color: var(--cinza);
+}
+
+.midia-titulo h1{
+    color: var(--branco);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.midia img{
+    justify-content: center;
+}
+
+.midia img:hover{
+    cursor: pointer;
+}
+
+.midia .whatsapp{
+    width: 15%;
+    margin-bottom: 3px;
+    margin-right: 0;
+}
+
+footer h2{
+    color: var(--cinza);
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+
+/* =============================================================================================================== */
+
+.ilustracao3{
+    position: absolute;
+    rotate: 180deg;
+    margin-left: 1350px;
+    top: 1100px;
+}
+
+.ilustracao4{
+    position: absolute;
+    top: 1800px;
+    margin-right: 1300px;
+}
+
+.ilustracao5{
+    position: absolute;
+    rotate: 180deg;
+    margin-left: 1300px;
+    top: 2200px;
+}
+
+.ilustracao6, .ilustracao7{
+    position: absolute;
+}
+
+.ilustracao8{
+    position: absolute;
+    rotate: 180deg;
+    margin-left: 1220px;
+    top: 2850px;
+}
+/* =============================================================================================================*/
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+/* ============================================================================================================= */
+/* ============================================================================================================= */
+
+@media screen and (max-width: 768px){
+    body{
+        width: 45vh;
+        overflow-x: hidden;
+    }
+
+    #btnTop{
+        
+        padding: 5px;
+    }
+
+    header{
+         width: 40vh;
+    }
+    .nav-bar{
+        justify-content: space-between;
+        margin-left: -70px;
+        margin-right: -60px;
+        margin-top: -10px;
+        padding-top: 30px;
+        padding-left: 100px;
+        padding-right: 50px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        margin-top: 10px;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .nav-list-mobile{
+        background-color: #C778DD;
+        width: 45vh;
+    }
+
+    .nav-list-mobile ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-list-mobile ul li button{
+        color: black;
+        margin-right: 0;
+    }
+
+    /* ============================================ */
+
+    .content .apresentacao{
+        flex-direction: column;
+    }
+
+    .content .apresentacao .foto{
+        width: 55%;
+        margin-left: 90px;
+    }
+
+    .content .apresentacao .forma{
+        width: 20%;
+        top: 160px;
+        right: 220px;
+    }
+
+    .apresentacao .apre-sobre{
+        margin: 0 1px 0 10px;
+        width: 40vh;
+    }
+
+    .apresentacao .apre-sobre h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .apresentacao .apre-sobre .contateme-mobile{
+        margin-left: 55px;
+    }
+
+    /* =========================================== */
+
+    .frase{
+        display: none;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    .ilustracao1, .ilustracao2, .ilustracao3, .ilustracao4, .ilustracao5, .ilustracao6 ,.ilustracao7 ,.ilustracao8{
+        display: none;
+    }
+
+    /* =========================================== */
+
+    .projetos .titulo{
+        width: 39vh;
+        margin-top: 50px;
+    }
+
+    .projeto-mobile{
+        width: 50vh;
+        margin-top: 500px;
+    }
+
+    .projetos .titulo .seta{
+        display: none;
+    }
+
+    .projeto{
+        flex-direction: column;
+        width: 45vh;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .projeto .card{
+        width: 40vh;
+        padding-right: 0;
+        align-self: center;
+        margin-bottom: 15px;
+    }
+
+    .projeto .card-baixo{
+        margin-top: 0;
+    }
+
+    .projeto .card-mobile{
+        display: none;
+    }
+
+    /* ============================================ */
+
+    .tecnologia .titulo{
+        width: 39vh;
+        margin-top: 10px;
+    }
+
+    .tecnologia .titulo .seta{
+        display: none;
+    }
+
+    .conhecimento{
+        width: 45vh;
+    }
+
+    .conhecimento .card2{
+        width: 20vh;
+    }
+
+    .conhecimento .card2-mobile{
+        margin-top: 15px;
+    }
+
+    /* ============================================ */
+
+    .container-habilidade{
+        width: 35vh;
+        margin-left: 25px;
+        padding: 20px;
+    }
+
+
+
+    .container-hab{
+        margin-bottom: 7px;
+    }
+
+    /* ============================================= */
+
+    .sobre-mim{
+        width: 30vh;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .sobre-mim .sobre{
+        margin: 0;
+        padding: 0;
+        width: 42vh;
+    }
+
+    .sobre-mim img{
+        display: none;
+    }
+
+    /* ============================================= */
+
+    .contato{
+        width: 35vh;
+        margin-top: 250px;
+    }
+
+    .forma-contato{
+        margin-left: -55px;
+        flex-direction: column;
+    }
+
+    .forma-contato .mensagem{
+        width: 35vh;
+        padding: 2px;
+        margin-top: 15px
+    }
+
+    .forma-contato .mensagem img{
+        width: 7%;
+        margin-top: 25px;
+    }
+
+    .forma-contato .mensagem .whatsapp{
+        margin-left: 10px;
+    }
+
+    /* ================================================ */
+
+    footer{
+        width: 45vh;
+    }
+
+    .footer-conteudo{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .footer-conteudo .rodape{
+        text-align: center;
+    }
+
+    .footer-conteudo .midia{
+        display: none;
+    }
+
+
+}

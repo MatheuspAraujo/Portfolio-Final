@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Matheus Araujo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li onclick="inicio()" class="nav-item"><a href="#" class="nav-link"> <span>#</span>Inicio</a></li>
+                    <li  class="nav-item" class="nav-link"><button onclick="scrollToSection()"><span>#</span>Projetos</button></li>
+                    <li  class="nav-item" class="nav-link"><button onclick="sobre()"><span>#</span>Sobre mim</a></button></li>
+                    <li class="nav-item" class="nav-link"> <button onclick="contato()"><span>#</span>Contato</a></button></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/hamburguer.png" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="nav-list-mobile">
+            <ul>
+                <li onclick="inicio()" class="nav-item"><a href="#" class="nav-link"> <span>#</span>Inicio</a></li>
+                <li  class="nav-item" class="nav-link"><button onclick="scrollToSection()"><span>#</span>Projetos</button></li>
+                <li  class="nav-item" class="nav-link"><button onclick="sobre()"><span>#</span>Sobre mim</a></button></li>
+                <li class="nav-item" class="nav-link"> <button onclick="contato()"><span>#</span>Contato</a></button></li>
+            </ul>
+        </div>
+    </header>
+
+    <button id="btnTop" ><img onclick="rolarAoTopo()" src="./img/pra-cima.png" alt=""></button>
+
+    <!-- ===================================================================================================== -->
+
+    <div class="content">
+        <div class="redes">
+            <a href="#"><img onclick="github()" src="./img/Github.svg" alt=""></a>
+            <a href="#"><img onclick="linkedin()" src="./img/Linkedin.svg" alt=""></a>
+            <a href="#"><img onclick="youtube()" src="./img/Play.svg" alt=""></a>
+            <a class="" href=""><img class="whatsapp" onclick="whatsapp()" src="./img/whatsapp.png" alt=""></a>
+        </div>
+
+        <div class="apresentacao">
+            <img src="./img/foto.png" class="foto" alt="">
+
+            <img src="./ilustrações/forma.png" alt="" class="forma"> <!-- ilustração -->
+
+            <div class="apre-sobre">
+                <h1>Matheus é um <span>Desenvolvedor Front-End</span></h1>
+
+                <h2>Transformo Sonhos em realidade, atráves de códigos.</h2>
+
+                <button class="contateme-mobile" onclick="linkedin()">Contate-me!</button>
+
+                <button><a href="./arquivos/CV Matheus Araujo.pdf" download="">Ver Curriculo!</a></button>
+            </div>
+        </div>
+
+        <div class="frase">
+            <div class="texto">
+                <h2>&lt;p&gt;<span>Com poucas linhas de código podemos transformar a vida de milhões de pessoas.</span>&lt;p&gt;</h2>
+            </div>
+                <h3>- Dr.??</h3>
+        </div>
+    </div>
+
+    <!-- ================================================================================================= -->
+
+    <div id="projetos" class="projetos">
+        <div class="titulo projeto-mobile">
+            <div class="titulo-conteudo">
+                <h1><span>#</span>Projetos</h1>
+            </div>
+
+            <div class="seta">
+                <p>~~></p>
+            </div>
+        </div>
+    </div>
+
+    <img src="./ilustrações/retangulo em pontos.png" class="ilustracao2" alt="">  <!-- ilustração -->
+
+    <div class="projeto">
+        <div class="card">
+            <img src="./img/tesla.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>Tesla</h1>
+
+                <h3>Landing Page</h3>
+
+                <button onclick="teslaRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+
+        <div class="card card-2">
+            <img src="./img/starbucks.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>StarBucks</h1>
+
+                <h3>Landing Page</h3>
+
+                <button onclick="starbucksRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+
+        <div class="card card-mobile card-3">
+            <img src="./img/piano.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>Loja Instrumentos</h1>
+
+                <h3>Landing Page</h3>
+
+                <button onclick="pianoRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+
+        <img src="./ilustrações/retangulo.png" class="ilustracao3" alt="">
+
+        <div class="card card-baixo">
+            <img src="./img/mario.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css JavaScript</h2>
+                
+                <h1>Jogo Mario</h1>
+
+                <h3>Game</h3>
+
+                <button onclick="marioRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+
+        <div class="card card-mobile card-baixo">
+            <img src="./img/google.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>Google Home</h1>
+
+                <h3>Interface</h3>
+
+                <button onclick="googleRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+
+        <div class="card card-3 card-baixo">
+            <img src="./img/youtube.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>Youtube Home</h1>
+
+                <h3>Interface</h3>
+
+                <button onclick="youtubeRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+
+        <img src="./ilustrações/retangulo em pontos.png" class="ilustracao4" alt="">
+
+        <div class="card card-mobile card-baixo">
+            <img src="./img/burguer.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>Burguer Slash</h1>
+
+                <h3>Landing Page</h3>
+
+                <button onclick="burguerRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+
+        <div class="card card-baixo">
+            <img src="./img/Login.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>Formulario Login</h1>
+
+                <h3>Login</h3>
+
+                <button onclick="loginRepositorio()">Ver Projeto</button>
+            </div>
+        </div>
+        
+        <div class="card card-3 card-baixo">
+            <img src="./img/spotify.png" alt="">
+            <div class="projeto-conteudo">
+                <h2>Html Css</h2>
+                
+                <h1>Spotify</h1>
+
+                <h3>Landing Page</h3>
+
+                <button onclick="spotifyRepositorio()">Ver Projeto</button>
+            </div>
+        </div> 
+    </div>
+
+    <!-- ======================================================================================================= -->
+
+    <div id="habilidades" class="tecnologia">
+        <div class="titulo">
+            <div class="titulo-conteudo">
+                <h1><span>#</span>Tecnologias</h1>
+            </div>
+
+            <div class="seta">
+                <p>~~></p>
+            </div>
+        </div>
+    </div>
+
+    <img src="./ilustrações/retangulo.png" class="ilustracao5" alt="">
+
+    <div class="conhecimento">
+        <div class="card2">
+            <img src="./img/html.png"alt="">
+            <h2>HTML</h2>
+        </div>
+
+        <div class="card2">
+            <img src="./img/css.png" alt="">
+            <h2>CSS3</h2>
+        </div>
+
+        <div class="card2 card2-mobile">
+            <img src="./img/javascript.png" alt="">
+            <h2>JavaScript</h2>
+        </div>
+
+        <div class="card2 card2-mobile">
+            <img src="./img/react.png" alt="">
+            <h2>React</h2>
+        </div>
+
+        <div class="card2 card2-mobile">
+            <img src="./img/flutter.png" alt="">
+            <h2>Flutter</h2>
+        </div>
+
+        <div class="card2 card2-mobile">
+            <img src="./img/bootstrap.png" class="card2-baixo" alt="">
+            <h2>bootstrap</h2>
+        </div>
+        
+        <div class="card2 card2-mobile">
+            <img src="./img/jquery.png" class="card2-baixo" alt="">
+            <h2>JQuery</h2>
+        </div>
+
+        <div class="card2 card2-mobile">
+            <img src="./img/git.png" class="card2-baixo" alt="">
+            <h2>Git</h2>
+        </div>
+    </div>
+
+    <!-- ======================================================================================================= -->
+
+    <div id="habilidades" class="tecnologia">
+        <div class="titulo">
+            <div class="titulo-conteudo">
+                <h1><span>#</span>Habilidades</h1>
+            </div>
+
+            <div class="seta">
+                <p>~~></p>
+            </div>
+        </div>
+    </div>
+
+    <img src="./ilustrações/retangulo em pontos.png" class="ilustracao7" alt="">
+
+    <div class="container-habilidade">
+        <div class="container-hab">
+            <div class="container1">
+                <p><span>Linguagens:</span> Inglês a nível B1 (Intermediário). Consigo me comunicar, como fazer tarefas e dar opiniões, mas com algumas limitações.</p>
+            </div>
+        </div>
+
+        <div class="container-hab">
+            <div class="container1">
+                <p><span>Habilidades de comunicação:</span> Tenho habilidade em me expressar de maneira clara, comunicando problemas complexos de forma concisa enquanto colaboro efetivamente com a equipe.</p>
+            </div>
+        </div>
+
+        <div class="container-hab">
+            <div class="container1">
+                <p><span>Atenção a detalhes:</span> Tenho uma abordagem perfeccionista ao criar aplicativos e desenvolver layouts para minhas páginas da web.</p>
+            </div>
+        </div>
+
+        <div class="container-hab">
+            <div class="container1">
+                <p><span>Solução de problemas:</span> 
+                    Possuo a capacidade de abstrair, analisar e dividir o problema em partes menores, facilitando assim sua resolução de forma mais viável.</p>
+            </div>
+        </div>
+
+        <img src="./ilustrações/retangulo.png" class="ilustracao8" alt=""> <!-- ilustração -->
+
+        <div class="container-hab">
+            <div class="container1">
+                <p><span>Gerenciamento de tempo eficiente:</span> Como uma pessoa altamente disciplinada, tenho a capacidade de utilizar meu tempo de forma eficiente, visando a máxima produtividade. Acredito que essa habilidade se reflete diretamente no meu trabalho.</p>
+            </div>
+        </div>
+
+        <div class="container-hab">
+            <div class="container1">
+                <p><span>Aprendizado flexível e independente:</span> Sempre que estou envolvido em um novo projeto, tenho como objetivo aprender e me adaptar rapidamente, seja em relação ao projeto em si ou à dinâmica da equipe.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================================================== -->
+
+    <div id="sobre" class="sobre-mim">
+        <div class="sobre">
+            <div class="sobre-titulo">
+                <h1><span>#</span>Sobre-Mim</h1>
+            </div>
+            <div class="sobre-texto">
+                <p>Olá meu nome é Matheus!</p>
+                <p>Sou um desenvolvedor Front-End autodidata de 20 anos de Guarulhos, São Paulo. Minha paixão por desenhos à mão livre e edição, me levaram a estudar marketing e adquirir habilidades dentro da área.</p>
+                <p>No entanto, minha descoberta do desenvolvimento de software me fascinou ainda mais. Atualmente, crio experiências digitais únicas, combinando minha criatividade artística, habilidades persuasivas e aprimoramento visual em meus projetos.</p>
+                <p>No momento estou cursando  Análise e Desenvolvimento de Sistemas e elaborando diversos projetos pessoais, para adquirir ainda mais conhecimento na área.</p>
+            </div>
+        </div>
+        <div class="img"><img src="./img/foto.png" alt=""></div>
+    </div>
+
+    <img src="./ilustrações/retangulo em pontos.png" class="ilustracao6" alt="">
+
+    <!-- ======================================================================================================= -->
+
+    <div id="contato" class="contato">
+        <div class="forma-contato">
+            <div class="contato-titulo">
+                <h1><span>#</span>Contato</h1>
+
+                <p>Estou interessado em oportunidades freelance. No entanto, se você tiver outro pedido ou pergunta, não hesite em contactar-me</p>
+            </div>
+
+            <div class="mensagem">
+                <p>Me mande uma Mensagem</p>
+
+                <img class="whatsapp" onclick="whatsapp()" src="./img/whatsapp.png" alt="">
+                <img src="./img/Linkedin.svg" onclick="linkedin()" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==================================================================================================== -->
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="rodape">
+                <h1>Matheus Araujo</h1>
+                <p>Desenvolvedor Front-End</p>
+            </div>
+
+            <div class="midia">
+                <img src="./img/Github.svg" alt="">
+                <img src="./img/Linkedin.svg" alt="">
+                <img src="./img/Play.svg" alt="">
+                <img class="whatsapp" src="./img/whatsapp.png" alt="">
+            </div>
+        </div>
+
+        <h2>© Copyright 2023. Made by Matheus</h2>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
