@@ -815,6 +815,115 @@ footer h2{
     .footer-conteudo .midia{
         display: none;
     }
+}
 
+/* ============================================================================ */
 
+@media (max-width: 480px){
+    header{
+        width: 50vh;
+    }
+
+    .nav-bar{
+        width: 44vh;
+    }
+    
+    header .nav-list-mobile{
+        width: 56vh;
+    }
+
+    #btnTop{
+        margin-right: 10px;
+    }
+
+    .content{
+        width: 56vh;
+    }
+
+    .content .apresentacao .forma{
+        width: 20%;
+        top: 155px;
+    }
+
+    .content .apresentacao .foto{
+        width: 75%;
+        margin-left: 70px;
+    }
+
+    .apresentacao .apre-sobre{
+        width: 100%;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .apresentacao .apre-sobre .contateme-mobile{
+        margin-left: 5px;
+    }
+
+    .projetos{
+        width: 53vh;
+    }
+
+    .projetos .projeto-mobile{
+        width: 100vh;
+    }
+
+    .projeto{
+        width: 56vh;
+    }
+
+    .projeto .card{
+        width: 50vh;
+    }
+
+    .tecnologia{
+        width: 53vh;
+    }
+
+    .tecnologia .titulo{
+        width: 80vh;
+    }
+
+    .conhecimento{
+        width: 56vh;
+    }
+
+    .conhecimento .card2{
+        width: 23vh;
+    }
+
+    .conhecimento .card2-mobile{
+        margin-top: 0;
+    }
+
+    .container-habilidade{
+        width: 46vh;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .sobre-mim{
+        width: 51vh;
+        margin-top: 7px;
+    }
+
+    .sobre-mim .sobre{
+        width: 52vh;
+    }
+
+    .contato{
+        width: 45vh;
+    }
+
+    .contato .forma-contato .mensagem{
+        width: 51vh;
+    }
+
+    footer{
+        width: 56vh;
+    }
+
+    footer .footer-conteudo{
+        width: 40vh;
+    }
 }
